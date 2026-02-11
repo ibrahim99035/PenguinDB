@@ -37,3 +37,14 @@
 [2026-02-11 06:06:32] DB_OP: user=ibrahim op=LIST_TABLES db=ddd
 [2026-02-11 06:06:44] DB_OP: user=ibrahim op=DESCRIBE_TABLE db=ddd table=test
 [2026-02-11 06:09:11] INFO: Goodbye!
+[2026-02-11 14:10:42] INFO: System initialized
+[2026-02-11 14:11:08] USER_ACTION: user=ibrahim action=SESSION_CREATED details=username=ibrahim
+[2026-02-11 14:11:08] SUCCESS: Welcome, ibrahim!
+[2026-02-11 14:11:13] INFO: Goodbye!
+[2026-02-11 14:11:28] INFO: System initialized
+[2026-02-11 14:11:36] USER_ACTION: user=ibrahim action=SESSION_CREATED details=username=ibrahim
+[2026-02-11 14:11:36] SUCCESS: Welcome, ibrahim!
+[2026-02-11 14:11:43] DB_OP: user=ibrahim op=SET_OWNER db=dddd
+[2026-02-11 14:11:43] SUCCESS: Database 'dddd' created successfully
+[2026-02-11 14:11:43] DB_OP: user=ibrahim op=CREATE_DATABASE db=dddd
+[2026-02-11 14:11:48] INFO: Goodbye!
