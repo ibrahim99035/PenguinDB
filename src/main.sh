@@ -4,10 +4,14 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 source "$SCRIPT_DIR/config/load.conf"
-source "$SCRIPT_DIR/lib/logger.sh"
-source "$SCRIPT_DIR/authentication/auth.sh"
+source "$SCRIPT_DIR/logger.sh"
 
-source "$SCRIPT_DIR/first_run.sh"
+source "$SCRIPT_DIR/authentication/auth.sh"
+source "$SCRIPT_DIR/authentication/authorization.sh"
+
+source "$SCRIPT_DIR/init/first_run.sh"
+source "$SCRIPT_DIR/db/db.sh"
+source "$SCRIPT_DIR/interfaces/cli.sh"
 
 main(){
     initialize_system
@@ -17,7 +21,7 @@ main(){
         run_first_time_setup
     fi
     
-    # start_cli_interface
+    start_cli_interface
 }
 
 initialize_system(){
@@ -41,4 +45,4 @@ is_first_run(){
     [[ ! -f "$USERS_FILE" || ! -s "$USERS_FILE" ]]
 }
 
-main "$@"
+main

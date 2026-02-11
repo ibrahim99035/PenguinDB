@@ -10,6 +10,13 @@ storage/temp/*
 !storage/logs/.gitkeep
 !storage/temp/.gitkeep
 
+*.metadata
+*.owner
+*.data
+*.meta
+*.log
+src/storage/*
+
 # Editor files
 *.swp
 *.swo

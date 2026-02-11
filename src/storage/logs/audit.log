@@ -1,0 +1,39 @@
+[2026-02-11 05:31:42] INFO: System initialized
+[2026-02-11 05:35:15] INFO: System initialized
+[2026-02-11 05:35:23] INFO: System initialized
+[2026-02-11 05:35:41] INFO: System initialized
+[2026-02-11 05:39:31] INFO: System initialized
+[2026-02-11 05:39:31] INFO: Creating admin account...
+[2026-02-11 05:39:50] USER_ACTION: user=guest action=USER_REGISTERED details=username=ibrahim role=admin email=admin@dbms.local
+[2026-02-11 05:39:50] SUCCESS: Admin account created successfully!
+[2026-02-11 05:50:55] INFO: Goodbye!
+[2026-02-11 05:50:59] INFO: System initialized
+[2026-02-11 05:51:26] INFO: System initialized
+[2026-02-11 05:51:44] INFO: System initialized
+[2026-02-11 05:51:52] USER_ACTION: user=ibrahim action=SESSION_CREATED details=username=ibrahim
+[2026-02-11 05:51:52] SUCCESS: Welcome, ibrahim!
+[2026-02-11 05:52:09] USER_ACTION: user=ibrahim action=LIST_USERS details=by=ibrahim
+[2026-02-11 05:55:30] INFO: Goodbye!
+[2026-02-11 05:55:31] INFO: System initialized
+[2026-02-11 05:55:38] USER_ACTION: user=ibrahim action=SESSION_CREATED details=username=ibrahim
+[2026-02-11 05:55:38] SUCCESS: Welcome, ibrahim!
+[2026-02-11 05:55:55] INFO: Goodbye!
+[2026-02-11 05:58:42] INFO: System initialized
+[2026-02-11 05:58:52] USER_ACTION: user=ibrahim action=SESSION_CREATED details=username=ibrahim
+[2026-02-11 05:58:52] SUCCESS: Welcome, ibrahim!
+[2026-02-11 05:58:58] DB_OP: user=ibrahim op=SET_OWNER db=eee
+[2026-02-11 05:58:58] SUCCESS: Database 'eee' created successfully
+[2026-02-11 05:58:58] DB_OP: user=ibrahim op=CREATE_DATABASE db=eee
+[2026-02-11 05:59:02] DB_OP: user=ibrahim op=LIST_DATABASES db=
+[2026-02-11 06:04:27] DB_OP: user=ibrahim op=SET_OWNER db=ddd
+[2026-02-11 06:04:27] SUCCESS: Database 'ddd' created successfully
+[2026-02-11 06:04:27] DB_OP: user=ibrahim op=CREATE_DATABASE db=ddd
+[2026-02-11 06:04:38] DB_OP: user=ibrahim op=LIST_DATABASES db=
+[2026-02-11 06:05:03] SUCCESS: Using database 'ddd'
+[2026-02-11 06:05:03] DB_OP: user=ibrahim op=USE_DATABASE db=ddd
+[2026-02-11 06:06:10] SUCCESS: Table 'test' created successfully
+[2026-02-11 06:06:10] DB_OP: user=ibrahim op=CREATE_TABLE db=ddd table=test
+[2026-02-11 06:06:13] DB_OP: user=ibrahim op=LIST_TABLES db=ddd
+[2026-02-11 06:06:32] DB_OP: user=ibrahim op=LIST_TABLES db=ddd
+[2026-02-11 06:06:44] DB_OP: user=ibrahim op=DESCRIBE_TABLE db=ddd table=test
+[2026-02-11 06:09:11] INFO: Goodbye!

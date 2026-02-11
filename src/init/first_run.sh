@@ -14,7 +14,7 @@ show_welcome(){
     echo ""
 }
 
-run_first_time_setup() {
+run_first_time_setup(){
     show_info "Creating admin account..."
     echo ""
     
@@ -35,4 +35,3 @@ run_first_time_setup() {
     echo ""
     read -p "Press Enter to continue..."
 }
-

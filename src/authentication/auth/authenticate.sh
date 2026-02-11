@@ -38,7 +38,7 @@ login_interactive() {
     echo ""
     
     if authenticate_user "$username" "$password"; then
-        local session_token=$(create_session "$username")
+        create_session "$username"
         show_success "Welcome, $username!"
         return 0
     else

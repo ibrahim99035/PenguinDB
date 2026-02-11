@@ -3,7 +3,6 @@
 validate_username() {
     local username="$1"
     
-    #Checking the length
     if [[ ${#username} -lt $MIN_USERNAME_LENGTH ]]; then
         show_error "Username must be at least $MIN_USERNAME_LENGTH characters"
         return 1
@@ -14,7 +13,6 @@ validate_username() {
         return 1
     fi
     
-    #Ensuring format to be jsut alphanumeric and underscore only
     if [[ ! "$username" =~ ^[a-zA-Z0-9_]+$ ]]; then
         show_error "Username can only contain letters, numbers, and underscores"
         return 1
@@ -23,7 +21,6 @@ validate_username() {
     return 0
 }
 
-#Validate email format  with regex
 validate_email() {
     local email="$1"
     
